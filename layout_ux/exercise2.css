@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+header, footer {
+    background-color: #5b1717e1;
+    width: 100vw;
+    height: 50px; /* Adjust the height of the header and footer as needed */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Ensure header and footer appear above other sections */
+}
+
+footer {
+    bottom: 0;
+    top: unset;
+}
+
+#container {
+    margin-top: 50px; /* Adjust based on the height of the header */
+    margin-bottom: 50px; /* Adjust based on the height of the footer */
+    display: flex;
+    height: calc(100vh - 100px); /* Adjust based on the combined height of header and footer */
+    overflow: hidden; /* Hide content overflowing from the container */
+}
+
+#left, #right {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#left {
+    background-color: #e2a3a3; /* Adjust the background color for the left section */
+    float: left;
+}
+
+#right {
+    background-color: #974848; /* Adjust the background color for the right section */
+    float: right;
+}
+
+#content {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto; /* Allow content to be scrollable if it exceeds the height */
+    padding: 20px; /* Adjust padding as needed */
+    box-sizing: border-box;
+    background-color: #fff; /* Adjust the background color for the content area */
+}
+
+#h1 {
+    color: black;
+    text-align: center;
+    padding: 50px;
+}

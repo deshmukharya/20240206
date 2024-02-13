@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+header, footer {
+    background-color: #5b1717e1;
+    width: 100vw;
+    height: 50px; /* Adjust the height of the header and footer as needed */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+footer {
+    bottom: 0;
+    top: unset;
+}
+
+#main {
+    margin-top: 50px; /* Adjust based on the height of the header */
+    margin-bottom: 50px; /* Adjust based on the height of the footer */
+    padding: 0;
+    width: 100%;
+    height: calc(100vh - 100px); /* Adjust based on the combined height of header and footer */
+    box-sizing: border-box;
+}
+
+ #h1{
+    color:black; 
+    text-align:center;
+    padding:50px;
+}
+#left {
+    float: left;
+    width: 25%;
+    height: 100%;
+    background-color: #e2a3a3; /* Adjust the background color for the left section */
+}
+
+#right {
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: #974848; 
+    background-repeat:no-repeat;
+    /* Adjust the background color for the right section */
+}
+
+#clear {
+    float: right;
+    width: 25%;
+    height: 100%;
+    background-color: #e2a3a3;
+    
+}
